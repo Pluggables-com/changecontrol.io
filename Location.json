@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+	"title": "Location",
+	"type": "object",
+	"description": "Location Data Packet appended to dynamic tracking array",
+	"properties": {
+        "location": {
+            "type": "object",
+            "properties": {
+                "lat": {"type": "number"},
+                "lng": {"type": "number"}
+            }
+        },
+        "whenUpdated": {"type": "number", "description": "Date Time of update: UTC as the number of milliseconds since 1 January, 1970 UTC"},
+	    "whoUpdated": {"type": "string", "description": "ID of individual or system (email) requesting staus update"}
+	},
+	"required": ["location","whoUpdated"]
+}
