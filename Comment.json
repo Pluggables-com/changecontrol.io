@@ -1,0 +1,12 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+	"title": "Comment",
+	"type": "object",
+	"description": "Comment directly related to and therefore appended to the controllable communications array",
+	"properties": {
+        "comment": {"type": "string", "description": "Required comment"},
+        "whenUpdated": {"type": "number", "description": "Date Time of update: UTC as the number of milliseconds since 1 January, 1970 UTC"},
+	    "whoUpdated": {"type": "string", "description": "ID of individual or system (email) requesting staus update"}
+	},
+	"required": ["comment","whoUpdated"]
+}
