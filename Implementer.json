@@ -1,0 +1,11 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+	"title": "Implementer",
+	"type": "object",
+	"description": "Implementer Data Packet represents the system or individual that requires approval to perform against against controllable.",
+	"properties": {
+	    "implementerKey":{"type": "string", "description":"UUID (email) that identifies requester individual or system"}
+	},
+	"required": ["implementerKey"]
+	
+}
