@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "TrackablePatchArray",
+    "description": "Partial Updates are performed by patches which consume this array of name value pairs (propertyName = propertyValue).  Patches cannot be used to prune properties from an object.  To perform a potentially destructive update, use PUT.",
+    "type": "object",
+        "properties": {
+            "domain": {"type": "string"},
+            "trackableKey": {"type": "string"},
+            "patches": { "type": "array",
+                "items": {"type": "object",
+                "properties": {
+                    "propetyName": {"type": "string"},
+                    "propetyValue": {"type": "string"}
+                }
+            }
+        }
+    }
+}
