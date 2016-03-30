@@ -1,0 +1,9 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+	"title": "controller",
+	"type": "object",
+	"description": "Controller Data Packet represents the system or individual authorized to control the outcome of the change request.",
+	"properties": {
+	    "controllerKey":{"type": "string", "description":"Unique (email) that identifies controller individual or system"}
+	}
+}
