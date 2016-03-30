@@ -1,0 +1,13 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+	"title": "Status",
+	"type": "object",
+	"description": "Status Change Data Packet for Controllable - Status (state) is best maintained by posting to state specific rest endpoints",
+	"properties": {
+	    "comment": {"type": "string", "description": "Required comment"},	    
+	    "state": {"type": "string", "description": "new state of Controllable from the enum [NEW, SUBMITTED, RECALLED, PENDING, APPROVED, HOLD, REJECTED, REASSIGNED, FAULT, NO_RESPONSE]"},
+	    "whoUpdated": {"type": "string", "description": "ID of individual or system (email) requesting staus update"},
+	    "whenUpdated": {"type": "number", "description": "Date Time of update: UTC as the number of milliseconds since 1 January, 1970 UTC"}
+	},
+	"required": ["whoUpdated"]
+}
