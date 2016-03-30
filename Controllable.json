@@ -84,7 +84,7 @@
 		    },
 		    "required": ["senderKey", "uri"]
 		},
-		"route": {
+		"tracking": {
 		    "description": "An Array of time/location objects that display movement over time of this controlled process.",
 		    "type": "array",
 		    "items": { "type": "object"},
