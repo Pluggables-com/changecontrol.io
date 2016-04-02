@@ -20,9 +20,9 @@
 			"description": "WHO - Registered Key  (email) of individual or system making the Request",
 			"type": "string"
 		},
-		"status": {
-			"description": "Current Status of the controllable from the global control status enumeration: NEW, SUBMITTED, RECALLED, PENDING, APPROVED, HOLD, REJECTED, REASSIGNED, FAULT, NO_RESPONSE",
-			"enum": ["NEW", "SUBMITTED", "RECALLED", "PENDING", "APPROVED", "HOLD", "REJECTED", "REASSIGNED", "FAULT", "NO_RESPONSE"]
+		"state": {
+			"description": "Current State of the controllable from the global control status enumeration: NEW, SUBMITTED, RECALLED, PENDING, APPROVED, HOLD, REJECTED, REASSIGNED, FAULT, NO_RESPONSE",
+			"type": "string"
 		},
 		"process": {
 			"description": "WHY - Change Request Process is from the change request Process enumeration that may have additional states defined by the organization but always includes: PLANNED, UNPLANNED, STANDARD, EMERGENCY.",
